@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- <meta charset="UTF-8"> -->
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+	<!-- CSS's -->
+	<link rel="stylesheet" href="./lib/angular-material/angular-material.css">
+
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="./assets/css/centralizar.css">
+
+
+
+
+	<!--
+	<link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="/lib/bootstrap/dist/css/styles.css">
+-->
+
+
+	<!-- Bower -->
+	<script src="./lib/angular/angular.js"></script>
+
+	<script src="./lib/angular-aria/angular-aria.js"></script>
+
+	<script src="./lib/angular-animate/angular-animate.js"></script>
+
+	<script src="./lib/angular-material/angular-material.js"></script>
+
+	<script src="./lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+
+	<!-- jquery e bootstrap -->
+	<!--	<script src="/lib/jquery/dist/jquery.min.js"></script>-->
+	<!--	<script src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>-->
+
+
+
+	<!-- App -->
+	<script src="app.js"></script>
+
+
+    
+    <script src="components/services/http.srvc.js"></script>
+	<!-- Controllers -->
+	<script src="components/restrito/restritoCtrl.js"></script>
+
+	<script src="components/login/loginCtrl.js"></script>
+
+	<script src="components/home/homeCtrl.js"></script>
+
+	<script src="components/nav_bar/nav_barCtrl.js"></script>
+
+
+
+	<div ng-include="'components/nav_bar/nav_bar.html'"></div>
+    
+    
+
+
+</head>
+
+
+<body ng-app="myApp">
+
+
+	<ui-view></ui-view>
+
+
+</body>
+
+</html>

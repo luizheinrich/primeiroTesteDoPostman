@@ -1,0 +1,145 @@
+<div layout="row" layout-align="center center">
+	<div flex>
+		<md-card>
+			<md-card-title layout="column">
+				<md-card-title-text>
+					<div layout="row">
+						<h1>Lista de postos de gasolina no Combu$Preço</h1>
+
+
+					</div>
+					<h3 class="md-title"> Clique no posto para mais informações</h3>
+					<h3 class="md-title"> Selecione sua cidade: <md-menu>
+                <md-button aria-label="Open menu with custom trigger" class="md-raised md-primary" ng-mouseenter="$mdMenu.open()">Cidades
+                </md-button>
+                <md-menu-content width="4" ng-mouseleave="$mdMenu.close()">
+                <md-menu-item>
+                    <md-button >cidade  1
+                    </md-button>
+                    </md-menu-item>
+                    
+                    <md-menu-item>
+                    <md-button  >cidade 2
+                    </md-button>
+                    </md-menu-item>
+                    
+                    <md-menu-item>
+                    <md-button >cidade 3
+                    </md-button>
+                    </md-menu-item>
+                </md-menu-content>
+            </md-menu></h3>
+
+				</md-card-title-text>
+				<!--
+        <div layout="column" layout-align="center center" flex="80">
+            <h3 class="md-title"> Você pode buscar o posto por nome ou pelo endereço no espaço abaixo:</h3>
+        <div layout="column" layout-align="space-between"> 
+            <div flex>
+           <md-input-container class="md-icon-float md-block" flex >
+               
+                <label>Buscar</label>
+                    <md-icon md-svg-src="components/img/ic_search_black_24px.svg" class="name" ></md-icon>
+                    <input id="nome" ng-model="vm.Posto" type="text">
+                 </md-input-container>
+            </div>
+         
+             <div layout="row" layout-align="space arownd center" flex>
+                <md-button class="md-raised md-primary"> Filtro top 3 </md-button>
+               
+                 <md-menu>
+                <md-button aria-label="Open menu with custom trigger" class="md-raised md-primary" ng-mouseenter="$mdMenu.open()">+ Filtros
+                </md-button>
+                <md-menu-content width="4" ng-mouseleave="$mdMenu.close()">
+                <md-menu-item>
+                    <md-button >Filtro 1
+                    </md-button>
+                    </md-menu-item>
+                    
+                    <md-menu-item>
+                    <md-button  >Filtro 2
+                    </md-button>
+                    </md-menu-item>
+                    
+                    <md-menu-item>
+                    <md-button >Filtro 3
+                    </md-button>
+                    </md-menu-item>
+                </md-menu-content>
+            </md-menu>
+                 
+                 
+                 
+            <md-menu>
+                <md-button aria-label="Open menu with custom trigger" class="md-raised md-primary" ng-mouseenter="$mdMenu.open()"> Ordenar por:
+                </md-button>
+                <md-menu-content width="4" ng-mouseleave="$mdMenu.close()">
+                <md-menu-item>
+                    <md-button >Nome
+                    </md-button>
+                    </md-menu-item>
+                    
+                    <md-menu-item>
+                    <md-button  >Endereço
+                    </md-button>
+                    </md-menu-item>
+                    
+                    <md-menu-item>
+                    <md-button >Classificação
+                    </md-button>
+                    </md-menu-item>
+                </md-menu-content>
+            </md-menu>
+                 
+            
+            </div>   
+        </div>
+    </div>
+
+-->
+
+			</md-card-title>
+			<md-card-content>
+
+				<md-list>
+					<div layout="row" layout-align=" center center" flex class="posto_list_title">
+
+						<div flex="25" layout="row">
+							<h1 class="md-title">Nome do Posto</h1></div>
+
+						<div flex="50" layout="row"><span class="md-title">Endereço</span></div>
+
+						<div flex layout="row"><span class="md-title">Cidade</span></div>
+
+						<div flex layout="row"><span class="md-title">Bandeira</span> </div>
+
+					</div>
+
+					<!--Para fazer efetivamente a repetição dos itens:   <md-list-item  ng-repeat="x in vm.Station | orderBy:vm.propertyName"> -->
+
+
+					<md-list-item ui-sref="app.postosDetails({_id:x._id})" ng-click="null" ng-repeat="x in vm.postos | orderBy:vm.propertyName">
+						<div layout="column" layout-align="center" flex>
+							<div layout="row">
+								<div flex="25" layout="row"><span>{{x.name}}</span></div>
+
+								<div flex="50" layout="row"><span>{{x.address}}</span></div>
+
+								<div flex layout="row"><span>{{x.city}}</span></div>
+
+								<div flex layout="row"><span>{{x.flag}}</span> </div>
+
+							</div>
+						</div>
+
+
+					</md-list-item>
+
+				</md-list>
+
+			</md-card-content>
+
+		</md-card>
+
+	</div>
+</div>

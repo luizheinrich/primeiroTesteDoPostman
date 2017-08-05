@@ -1,0 +1,23 @@
+{
+	"name": "angular-rod",
+	"description": "servidor do angular do rodrigo",
+	"main": "index.js",
+	"authors": [
+    "Rodrigo"
+  ],
+	"license": "ISC",
+	"homepage": "",
+	"private": true,
+	"ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+	"dependencies": {
+		"angular": "^1.6.5",
+		"angular-material": "^1.1.4",
+		"angular-ui-router": "^0.3.2"
+	}
+}
