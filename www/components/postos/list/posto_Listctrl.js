@@ -10,7 +10,7 @@
 
         HttpSrvc.getAll();
         
-        
+   
 
 		vm.postos = PostosSrvc.fakeData;
 
@@ -22,5 +22,16 @@
 
 
 	};
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 })();

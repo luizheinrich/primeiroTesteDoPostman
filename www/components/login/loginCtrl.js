@@ -1,12 +1,12 @@
 (function () {
 
     'use strict';
- angular.module('myApp').controller('loginCtrl', ['$rootScope', '$state', loginCtrl]);
+    angular.module('myApp').controller("loginCtrl", ["$rootScope", "$state", loginCtrl]);
 
     function loginCtrl($rootScope, $state) {
         var vm = this;
         
-        
+
      //   vm.myfield = {}; //linha nova
      //   vm.e = {};       //linha nova
         
@@ -16,6 +16,10 @@
                         password: '1234'
                   };
      
+        
+        
+      
+        
         /*
         
 vm.submitenter = function (myfield, e){
@@ -63,16 +67,29 @@ return true;
         
         
         
-    }
+    };
          
 
+    
+    
+    
+    
+    
+    function loginCtrl(HttpSrvc) {
+
+		var vm = this;
+
+
+        HttpSrvc.mrRobot();
+        
+ 
+	};
+    
+    
+ 
+    
+    
 
 })();
-
-
-
-
-
-
 
 

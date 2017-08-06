@@ -12,9 +12,7 @@
 
         HttpSrvc.getAll();
         
-        
-
-	
+ 
 
 		vm.sortBy = function (propertyName) {
 
@@ -32,7 +30,7 @@
     
     
     
-    /*
+    
     
     
     function homeCtrl(){
@@ -51,5 +49,5 @@
     
     };
    
-*/
+
 })();

@@ -4,20 +4,34 @@
     
     // permite exportar um módulo para outro módulo
     module.exports = {
-        
+       
         getALL:  function(req, res){
         
         console.log(req.body)
         res.json(req.body);
-        
-        
-        
-    }
-        
+   
+        }
         
         
     }
     
+    
+    
+    /*
+    // Novo módulo exportado
+    module.exports = {
+       
+        mrRobot:  function(req, res){
+        
+        console.log(req.body)
+        res.json(req.body);
+   
+        }
+
+    }
+    
+    */
+
     
     
 })();
